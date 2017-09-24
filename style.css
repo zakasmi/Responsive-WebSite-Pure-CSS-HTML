@@ -1,0 +1,436 @@
+*{
+    margin : 0;
+    padding :0;
+    font-family: "century gothic","Arial","sans-serif";
+}
+body,html{
+
+    width:100%;
+    height: 100%;  
+}
+#hamburger{
+
+    position:fixed;
+    left:10px;
+    top:10px;
+    z-index: 99;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+    border-radius: 8px;
+}
+#hamburger:hover{
+    background-color:rgba(95, 158, 160,0.7);
+
+    cursor: pointer;
+
+}
+.header-page1{
+    width:100%;
+    height: 100%;
+    min-height: 600px;
+
+}
+nav {
+    position: fixed;
+    width:100%;
+    z-index: 98;
+}
+#welcome-pic{
+    width: 100%;
+    height: 100%;
+    background-image: url(castle-bonn-germany.jpg);
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    max-width: :100%;
+    background-size:100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+
+}
+
+
+#welcome-pic section{
+
+    width:60%;
+    height:30%;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    display: table;
+    margin-bottom: 40px;
+
+}
+
+.nav-colored {
+    background-color:rgba(33, 55, 71,0.9);
+}
+.nav-transparent {
+    background-color: rgba(33, 55, 71,0.6);
+}
+
+nav ul{
+    display :flex;
+
+    list-style: none;
+    justify-content: space-around;
+    border-bottom: 3px solid #CC2828
+}
+nav ul li{
+
+    color:white;
+
+}
+nav ul li:nth-child(6){
+
+    color :yellow ;
+}
+nav ul li a{
+    text-decoration: none;
+    padding:15px;
+    display:block;
+    color : white;
+    
+
+}
+nav ul li a:hover{
+
+    background-color:#B93D42;
+
+}
+
+#welcome-pic section h1{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color:white;
+    font-weight: 200;
+}
+.TextBold{
+    font-size: 170%;
+    letter-spacing: 14px;
+}
+
+#picture-Container{
+
+    box-sizing: border-box;
+    padding:10px;
+    background-color: #D4D0C8;
+    margin: 0px auto;
+    text-align: center;
+
+}
+#picture-Container p:nth-child(1){
+    font-size: 150%;
+    color:#430C0E;
+}
+#margin-text{
+    margin: 25px 0px 10px 0px;
+}
+
+#picture-Container ul {
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+#picture-Container ul li{
+
+
+} 
+#picture-Container img{
+
+    max-width:80%;
+    max-height: 350px;
+    margin-bottom: 15px;
+    box-shadow: 5px 8px 13px rgba(0,0,0,0.4);
+
+}
+
+#picture-Container ul li a{
+
+    position:relative;
+    text-decoration: none;
+    display:block;
+    top:80px;
+    color:white;
+    background-color: rgba(0,0,0,0.7);
+    padding:11px 0px;
+    width:80%;
+    margin:0px auto;
+
+}
+#picture-Container ul li a:hover{
+    color:rgb(223, 107, 107);
+
+}
+
+.content-container{
+    display:flex;
+
+}
+article{
+
+    background-color:#2B2F37;
+    padding: 20px;
+    color:white;
+    flex:5;
+    margin:10px;
+    box-shadow: 4px 5px 3px rgba(0,0,0,0.4);
+}
+.content-container aside{
+    flex: 2;
+    background-color: #2B2F37;
+    color:white;
+    padding:10px;
+    margin:10px;
+    box-shadow: 4px 5px 3px rgba(0,0,0,0.4);
+}
+.content-container aside h3{
+
+    background-color: #CC2828;
+    padding:2px;
+}
+footer{
+
+    background-color: black;
+    color:white;
+    padding:30px 20% ;
+
+    text-align: center; 
+
+}
+
+
+/*------------- media Responsive ---------------------*/
+@media screen and (max-width:700px){
+
+
+    nav ul{
+        display :flex;
+        flex-direction: column;
+        text-align: center;
+        /*
+        background-color: rgba(33, 55, 71,0.78);
+        list-style: none;
+        justify-content: space-around;
+        border-bottom: 3px solid #CC2828
+        */
+    }
+    .content-container{
+        display:flex;
+        flex-direction: column;  
+    }
+
+}
+/* ------------------- Style 22*/
+*{
+    font-family: "century gothic",sans-serif;
+
+}
+.body-inscription{
+
+   
+    width:100%;
+    height: 100%;
+    background-image: url(f2.jpg);
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+}
+.form-container{
+
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 60px;
+
+}
+.input-div  {
+
+    display:flex;
+    flex-wrap: wrap;
+
+
+}
+.back-div{
+
+    background-color: rgba(17, 17, 17,0.65);
+    width:90%;
+    margin:15px auto;
+    padding:10px 1px 10px 1px;
+    box-shadow: 0px 6px 15px 0 rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.input-div  div{
+    flex: 1;
+}
+
+.input-div div ul{
+    margin-left: 10px;
+    /*    background-color: rgba(0, 0, 0,0.3);*/
+    list-style: none;
+    margin : 10px 1px 10px 1px;
+    padding: 10px 1px 10px 5px;
+
+}
+
+.input-div  li{
+
+    flex-wrap: wrap;
+    display: flex;
+
+}
+.input-div div  ul li label{
+
+    background-color: :red;
+    flex:1;
+    margin:10px 2px 10px 5px ;
+    padding:8px 8px 8px 5px;
+    font-size: 80%;
+    color :white;
+}
+
+.input-div div ul li input{
+
+    flex:2;
+    margin:10px 5px 10px 0px ;
+    padding:8px 8px 8px 5px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius:8px;
+    border-style: none;
+    color :white;
+
+}
+.input-div div ul li input:focus{
+
+    background-color: rgba(0,0,0,0.5);
+
+}
+select-div {
+
+    padding-left: 10px;
+}
+.select-div ul{
+    display:flex;
+    justify-content: space-around;
+
+}
+.select-div p{
+    display: inline;
+    color :white;
+    margin:auto 20px;
+
+}
+#niveau-diplome{
+
+    display: none;
+}
+
+
+.select-div li{
+    flex: :1;
+    list-style: none;
+    margin:10px 1px 10px 10px;
+
+
+} 
+
+.select-div select{
+    box-sizing:border-box;
+    padding:0;
+    background-color: rgba(0, 0, 0,0.2);
+
+}
+.select-div label{
+    color:white 
+}
+#boldp{
+
+    color:white;
+    font-weight: bold;
+}
+.button-align{
+
+    text-align: center;
+}
+.button-align button{
+
+    margin: 20px;
+    border-style: none;
+    border-radius: 8px;
+    height: 30px;
+    min-width:100px;
+    color:white;
+    font-weight: bold;
+    background-color:#1F8AFF;
+    box-shadow: 1px 4px 8px rgba(0,0,0,0.4);
+    /*        #306CA2*/
+}
+.button-align button:hover{
+
+    background-color: #34223B;
+    cursor:pointer;
+
+}
+#erreur{
+    display: none ;
+    color:#FEBF30;
+    box-sizing: border-box;
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+#erreur span{
+    color: #E2D4B4  ;
+
+}
+#info{
+    display: none;
+    color: whitesmoke;
+    
+    box-sizing: border-box;
+    padding-left: 10px;
+
+}
+#info span{
+   color: #FEBF30;
+    
+}
+#infohead{
+    color: #31DF84  ;
+}
+/* --------Responsive inscription */
+@media screen and  (max-width:700px){
+
+
+    .input-div  {
+
+        flex-direction: column;
+    } 
+    #hamburger{
+
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+
+}
+@media screen and (max-width:700px){
+
+    .select-div ul{
+        flex-direction: column;
+        justify-content: space-around;
+        transition: 
+    }
+}
+
+
+

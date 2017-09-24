@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+    <head>
+   <link rel="stylesheet" href="style.css"/> 
+    </head>
+
+    <body class="body-inscription">
+            <img src="menu.png" width="45px"  id="hamburger"/>
+          <header>
+         <div >
+             
+                <nav class="nav-transparent" id="navmove" >
+                    <ul >
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Offre de Formation</a></li>
+                        <li><a href="#">Resources humaines</a></li>
+                        <li><a  href="inscription.html" target="_blank">Inscription</a></li>
+                        <li><a href="#">Connexion</a></li>
+                    </ul>
+                </nav>
+               
+         </div>
+    </header>
+      
+        
+   <div class="form-container">
+       <form id="form1">
+     <div class="input-div back-div">
+            
+         <div>
+            <ul >
+            <li> 
+                <label for="nom">Nom:<span>*</span></label>
+                <input type="text" id="nom" placeholder="Nom" autofocus>
+            </li>
+                
+            <li>
+                <label for="prenom">Prenom:<span>*</span></label>
+                <input type="text" id="prenom" placeholder="Prenom">
+            </li>
+           
+            <li>
+                <label for="datenaissance">Date De naissance:</label>
+                <input type="text" id="datenaissance" placeholder="JJ/MM/AAAA">
+            </li>
+                
+            <li>    
+                <label for="email">Email:<span>*</span></label>
+                <input type="email" id="email" placeholder="eg exemple@exemple.com">
+            </li>
+            </ul>  
+         </div>
+         <div>
+         <ul>
+                <li>
+                <label for="tel">Tel:</label>
+                <input type="text" id="tel" placeholder="eg 1234567890">
+            </li>
+                
+            <li>
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" placeholder="Adresse">
+            </li>
+                <li>    
+                <label for="diplome">Diplome:</label>
+                <input type="text" id="diplome" placeholder="diplome">
+            </li>
+                
+            <li>
+                <label for="typediplome">Type Diplome:</label>
+                <input type="text" id="typediplome" placeholder="Type Diplome">
+            </li>   
+            
+           
+            </ul>
+        </div>
+    </div>
+        
+        
+        <div class="select-div back-div" id="niveau-diplome">
+           <ul> 
+          <li>
+               
+                 <p>type Diplome </p>
+            <select id="typediplome2">
+                <option selected disabled> </option>
+                <option> TDI</option>
+                <option> TRI </option>
+                <option> TSGE </option>
+            </select>
+               </li>
+         <li>
+                  <p>Niveau</p>
+            <select id="niveau">
+                <option selected disabled></option>
+                <option>TS</option>
+                <option>T</option>
+                <option>Q</option>
+
+            </select>
+               </li>
+        <li> 
+            <p>Filiére</p>
+            <select id="filiere">
+                <option selected disabled></option>
+                <option>TDI</option>
+                <option>TRI</option>
+                <option>TSGE</option>
+            
+            </select></li>
+        </ul>
+        </div>
+        </form>
+        
+         <div class="select-div back-div">
+             <p id="boldp">Type Inscription : </p>
+             <ul>
+                <li>
+             <label for="pre" >Pre-Inscription</label>
+          <input type="radio" id="Pre" name="hello"/> 
+          </li>
+                 <li>
+                 <label for="inscription">inscription</label>
+           <input type="radio" id="inscription" name="hello"/>
+            </li>
+             </ul>
+        </div>
+        <div class="back-div" id="erreur">
+        
+        </div>
+        <div class="button-align back-div" >
+    
+             
+            <button id="enregistrer">Enregistrer</button>
+                
+            <button id="effacer">Effacer</button>
+                
+             
+        </div>
+       <div class="back-div" id="info">
+        
+        </div>
+        </div>
+        <footer id="footer2">
+      
+        
+        <div >
+              <p> Zakaria Kasmi <br>Tel: (+212) 06 18 31 18 11 <br>E-mail : zakaria.kasmi3@gmail.com </p>
+            <br><br><br><br>
+            <p>Copyright © Zakaria Kasmi - Site officiel - Tous droits réservés .
+BD Mohammed V N 32 - Oujda
+</p>
+            
+          
+        </div>
+    
+    </footer>
+    <script src="script.js" ></script>
+    </body>
+</html>
